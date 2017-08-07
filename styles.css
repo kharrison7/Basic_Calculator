@@ -16,9 +16,16 @@ border-radius: 5px;
 
 .answer_Space{
   width: 366pt;
+  float: right;
+  position: relative;
 }
 
-#total_board{
+#total_board {
+   width: 500pt;
+
+}
+
+#top_board{
    width: 500pt;
 
 }
