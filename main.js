@@ -1,8 +1,25 @@
   console.log("JS Online");
 
+
+let blocks_Clicked = 0;
+
+
 function accessTile(){
 console.log("block clicked");
+
+blocks_Clicked++;
+console.log("blocks clicked: " + blocks_Clicked);
+let liText = blocks_Clicked;
+// This moves the text to the H2.
+    liH2.innerHTML = liText ;
+// This adds the H2 to the li tile.
+    clock.appendChild( liH2 );
+// This adds the li to the itemList.
+    clockSpot.appendChild( clock );
 }
+let clockSpot = document.querySelector( "#header" );
+let clock       = document.createElement( "div" );
+let liH2     = document.createElement( "h2" );
 
 
 
@@ -32,6 +49,7 @@ let itemList = document.querySelector( "#total_board" );
    if( i === 1){
    li.setAttribute("class", "answer_Space");
    }
+
 // This sets each tile with an id based on position on the game board AND the card value.
    li.setAttribute("id", "card" + i);
 // This moves the text to the H2.
