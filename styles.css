@@ -3,7 +3,7 @@ li{
 margin: 2pt;
 height: 120pt;
 width: 120pt;
-background-color: #7986cb;
+background-color: #64B255;
 /*padding-bottom: ;*/
 position: relative;
 display: inline-block;
@@ -12,12 +12,23 @@ float: left;
 z-index: 100;
 border: 2pt solid black;
 border-radius: 5px;
+
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
 }
 
 .answer_Space{
-  width: 366pt;
-  float: right;
+  width: 368pt;
+  justify-content:flex-end;
+  /*align-content: flex-end;*/
+  /*float: right;*/
   position: relative;
+}
+
+.answer_Space > H2{
+  margin-right: 30pt;
 }
 
 #total_board {

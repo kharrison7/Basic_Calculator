@@ -3,7 +3,7 @@
 
 let blocks_Clicked = 0;
 
-
+// This amkes and runs the answer box.
 function accessTile(){
 console.log("block clicked");
 
