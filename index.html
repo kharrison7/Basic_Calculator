@@ -2,18 +2,58 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>DataVCard</title>
+    <title>Basic Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+  <body>
 
-    <div id="header"></div>
-      <div id="hereWeFlex">
-        <div id = "top_board"></div>
-        <div id = "total_board"></div>
-      </div>
+    <!-- This makes the header. -->
+    <h1>Basic Calculator</h1>
+  <div id="calculator holder">
 
+    <!-- This makes the table. -->
+    <table>
+      <tbody>
+
+        <tr>
+        <td onclick="clear_Button()" >C</td>
+        <th colspan="3" id="answer_goes_here"></th>
+        </tr>
+
+        <tr>
+          <td onclick="input_Character(7, false)">7</td>
+          <td onclick="input_Character(8, false)">8</td>
+          <td onclick="input_Character(9, false)">9</td>
+          <td onclick="input_Character('/', true)"class="operator">/</td>
+        </tr>
+
+        <tr>
+          <td onclick="input_Character(4, false)">4</td>
+          <td onclick="input_Character(5, false)">5</td>
+          <td onclick="input_Character(6, false)">6</td>
+          <td onclick="input_Character('*', true)"class="operator">*</td>
+        </tr>
+
+        <tr>
+          <td onclick="input_Character(1, false)">1</td>
+          <td onclick="input_Character(2, false)">2</td>
+          <td onclick="input_Character(3, false)">3</td>
+          <td onclick="input_Character('-', true)"class="operator">-</td>
+        </tr>
+
+        <tr>
+          <td onclick="input_Character(0, false)">0</td>
+          <td onclick="input_Character('.', false)">.</td>
+          <td onclick="do_Math();">=</td>
+          <td onclick="input_Character('+', true)"class="operator">+</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+<!-- This connects the file to JS. -->
       <script src="main.js"></script>
-  </body>
+   </body>
 </html>

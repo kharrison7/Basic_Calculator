@@ -1,42 +1,35 @@
-
-li{
-margin: 2pt;
-height: 120pt;
-width: 120pt;
-background-color: #64B255;
-/*padding-bottom: ;*/
-position: relative;
-display: inline-block;
-box-sizing: border-box;
-float: left;
-z-index: 100;
-border: 2pt solid black;
-border-radius: 5px;
-
-display: flex;
-justify-content: center;
-align-content: center;
-align-items: center;
+/*This styles the table and table contents.*/
+th, td {
+  background-color: #61B34F;
+  padding: 40pt;
+  margin: 2px;
+  color: #E6F0E6;
 }
 
-.answer_Space{
-  width: 368pt;
-  justify-content:flex-end;
-  /*align-content: flex-end;*/
-  /*float: right;*/
-  position: relative;
+td {
+  cursor: crosshair;
 }
 
-.answer_Space > H2{
-  margin-right: 30pt;
+td:hover {
+  background-color: #82C276;
 }
 
-#total_board {
-   width: 500pt;
-
+/*This positions the text in each button.*/
+html {
+  text-align: center;
+  font-size: 2em;
 }
 
-#top_board{
-   width: 500pt;
+.operator {
+  background-color: #82C276;
+  color: #3C693C;
+}
 
+.operator:hover {
+  color: #E6F0E6;
+}
+
+/*This positions and styles the title.*/
+h1 {
+ width: 400pt;
 }
