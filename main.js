@@ -1,5 +1,5 @@
   console.log("JS Online");
-
+  console.log("JS Online");
 
 let blocks_Clicked = 0;
 
